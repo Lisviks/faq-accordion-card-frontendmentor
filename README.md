@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL](https://your-solution-url.com)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/faq-accordion-card-folU0YiW1B)
 - Live Site URL: [URL](https://lisviks.github.io/faq-accordion-card-frontendmentor/)
 
 ## My process
