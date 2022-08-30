@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(hsl(273, 75%, 66%) 0, hsl(240, 73%, 65%) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 20px;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-1 {
+  content: url('./images/illustration-woman-online-mobile.svg');
+  width: 80%;
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.image-2 {
+  content: url('./images/bg-pattern-mobile.svg');
+  width: 80%;
+  position: absolute;
+  top: -0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  margin: 6rem 0 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+}
+
+.faq div {
+  margin: 1rem 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.faq label {
+  font-size: 14px;
+  color: hsl(237, 12%, 33%);
+  display: block;
+}
+
+.faq span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.faq input[type='checkbox'] {
+  display: none;
+}
+
+.answer {
+  display: none;
+  margin-top: 1rem;
+  font-size: 12px;
+  color: hsl(237, 12%, 33%);
+}
+
+.faq input[type='checkbox']:checked ~ .answer {
+  display: block;
+}
+
+.faq input[type='checkbox']:checked ~ span {
+  transform: rotate(180deg);
+}
+
+.faq input[type='checkbox']:checked ~ label {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    flex-direction: row;
+    width: 900px;
+    z-index: 10;
+    /* overflow: hidden; */
+    padding: 0;
+  }
+
+  .illustration {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
+    width: 40%;
+    margin: 1rem 0;
+    padding: 3rem 0.5rem;
+  }
+
+  h2 {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .image-1 {
+    content: url('./images/illustration-woman-online-desktop.svg');
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+    z-index: 1;
+  }
+
+  .image-2 {
+    content: url('./images/bg-pattern-desktop.svg');
+    position: absolute;
+    width: 200%;
+    top: -14rem;
+    overflow: hidden;
+    left: -5rem;
+    overflow: hidden;
+  }
+
+  .box {
+    position: relative;
+  }
+
+  .image-3 {
+    content: url('./images/illustration-box-desktop.svg');
+    position: absolute;
+    width: 11.5rem;
+    top: 15rem;
+    left: -33.7rem;
+    z-index: 5;
+  }
+
+  .faq label:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+  }
+}
